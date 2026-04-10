@@ -15,9 +15,9 @@ spring:
     #     defer-datasource-initialization: true                   # tells JPA to wait until hibernate has initialized before loading data into H2
 
     datasource:
-        url: jdbc:postgresql://localhost:5432/data
+        url: jdbc:postgresql://localhost:5432/Project1BorrowLend
         username: postgres
-        password: Codchamps2k20
+        password: ddaferadesfgjjinias12 #Random string for password
         driver-class-name: org.postgresql.Driver
     jpa:
         database: postgresql

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New borrower page</title>
+
+        <meta name="Author" content="Joaquin De Losada">
+
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+        <main>
+            <div class="pageNewItem">
+                <form class="cardNewItem" id="newBorrowerForm"> <!-- New Borrower Form -->
+                    <div class="inputFieldNewItem">
+                        <label for="borrowerFirstName">Borrower first name:</label>
+                        <input type="text" id="borrowerFirstName" placeholder="John"></input>
+                    </div>
+
+                    <div class="inputFieldNewItem">
+                        <label for="borrowerLastName">Borrower last name:</label>
+                        <input type="text" id="borrowerLastName" placeholder="Doe"></input>
+                    </div>
+
+                    <div class="inputFieldNewItem">
+                        <label for="borrowerEmail">Email:</label>
+                        <input type="text" id="borrowerEmail" placeholder="intial@email.com"></input>
+                    </div>
+
+                    <div class="inputFieldNewItem">
+                        <label for="borrowerPhoneNumber">Phone Number:</label>
+                        <input type="text" id="borrowerPhoneNumber" placeholder="(000)000-0000" maxlength="10"></input>
+                    </div>
+
+                    <div class="inputFieldNewItem">
+                        <label for="borrowerEmploymentType">Employment type:</label>
+                        <select id="borrowerEmploymentType">
+                            <option value="">Select loan type:</option>
+                            <option value="Employed">Employed</option>
+                            <option value="Self-Employed">Self-Employed</option>
+                            <option value="Unemployed">Unemployed</option>
+                        </select>
+                    </div>
+
+                    <div class="inputFieldNewItem">
+                        <label for="borrowerCreditScore">Credit Score:</label>
+                        <input type="number" id="borrowerCreditScore" placeholder="850" max="850" min="300"></input>
+                    </div>
+
+                    <div class="inputFieldNewItem">
+                        <label for="borrowerAddress">Address:</label>
+                        <input type="text" id="borrowerAddress" placeholder="500 West Anderson St, Florida"></input>
+                    </div>
+
+                    <div class="inputFieldNewItem">
+                        <label for="borrowerUSState">US State:</label>
+                        <select id="borrowerUSState">
+                            <option value="">Select loan type:</option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="Arkansas">Arkansas</option>
+                            <option value="California">California</option>
+                            <option value="Colorado">Colorado</option>
+                            <option value="Connecticut">Connecticut</option>
+                            <option value="Delaware">Delaware</option>
+                            <option value="Florida">Florida</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Idaho">Idaho</option>
+                            <option value="Illinois">Illinois</option>
+                            <option value="Indiana">Indiana</option>
+                            <option value="Iowa">Iowa</option>
+                            <option value="Kansas">Kansas</option>
+                            <option value="Kentucky">Kentucky</option>
+                            <option value="Louisiana">Louisiana</option>
+                            <option value="Maine">Maine</option>
+                            <option value="Maryland">Maryland</option>
+                            <option value="Massachusetts">Massachusetts</option>
+                            <option value="Michigan">Michigan</option>
+                            <option value="Minnesota">Minnesota</option>
+                            <option value="Mississippi">Mississippi</option>
+                            <option value="Missouri">Missouri</option>
+                            <option value="Montana">Montana</option>
+                            <option value="Nebraska">Nebraska</option>
+                            <option value="Nevada">Nevada</option>
+                            <option value="New Hampshire">New Hampshire</option>
+                            <option value="New Jersey">New Jersey</option>
+                            <option value="New Mexico">New Mexico</option>
+                            <option value="New York">New York</option>
+                            <option value="North Carolina">North Carolina</option>
+                            <option value="North Dakota">North Dakota</option>
+                            <option value="Ohio">Ohio</option>
+                            <option value="Oklahoma">Oklahoma</option>
+                            <option value="Oregon">Oregon</option>
+                            <option value="Pennsylvania">Pennsylvania</option>
+                            <option value="Rhode Island">Rhode Island</option>
+                            <option value="South Carolina">South Carolina</option>
+                            <option value="South Dakota">South Dakota</option>
+                            <option value="Tennessee">Tennessee</option>
+                            <option value="Texas">Texas</option>
+                            <option value="Utah">Utah</option>
+                            <option value="Vermont">Vermont</option>
+                            <option value="Virginia">Virginia</option>
+                            <option value="Washington">Washington</option>
+                            <option value="West Virginia">West Virginia</option>
+                            <option value="Wisconsin">Wisconsin</option>
+                            <option value="Wyoming">Wyoming</option>
+                        </select>
+                    </div>
+
+                    <div class="inputFieldNewItem">
+                        <label for="borrowerZipCode">zipCode:</label>
+                        <input type="number" id="borrowerZipCode" placeholder="00000" max="00000" min="99999"></input>
+                    </div>
+
+                    <div class="inputFieldNewItem">
+                        <label for="borrowerMonthlyIncome">Monthly Income:</label>
+                        <input type="number" id="borrowerMonthlyIncome" placeholder="10000" min="1000"></input>
+                    </div>
+
+                    <div class="inputFieldNewItem">
+                        <label for="borrowerYearlyIncome">Yearly Income:</label>
+                        <input type="number" id="borrowerYearlyIncome" placeholder="850" min="12000"></input>
+                    </div>
+
+                    <div class="buttonToNewPage">
+                        <button class="sub-btn new" id="newBorrowerForm">Submit new Borrower</button>
+
+                        <div class=""></div>
+
+                        <button class="sub-btn delete" onclick="window.location.href='BorrowerDisplay.html'">Cancel</button>
+                        
+                        <div class="status-msg" id="statusMsg"></div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>

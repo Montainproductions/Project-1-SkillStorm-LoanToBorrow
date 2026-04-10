@@ -1,0 +1,44 @@
+.page {
+    gap: 12px;
+    min-height: 220px;
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+}
+
+.newFormcard {
+    grid-column: 2/23;
+
+    background: #97958f;
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+}
+
+.inputField {
+    grid-column: 1/23;
+    margin-bottom: 1rem;
+}
+
+.inputField label { 
+    font-size: 13px;
+    font-weight: 500;
+    color: #6f6d67; 
+}
+
+.inputField input, .inputField select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.inputField input:focus, .inputField select:focus {
+  border-color: #888;
+}
+
+.inputField-row { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 12px; 
+}

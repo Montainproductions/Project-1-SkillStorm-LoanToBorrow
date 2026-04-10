@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Borrower page</title>
+
+        <meta name="Author" content="Joaquin De Losada">
+
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <div class="pageDisplay">
+                <div class="colletionDisplay-Left">
+
+                    <button class="itemBackground-LeftSection" type="button" style="display: none;" id="borrowerTemplateButton">
+                        <div class="loanBorrower-status" id="statusOfItem"></div>
+                        
+                        <div></div>
+                        <div></div>
+                        
+                        <div class="infoSection-button">
+                            <span class="titleTopSection-button" id="borrowerName">Borrower Name</span>
+                        </div>
+                        
+                        <div></div>
+                        <div></div>
+
+                        <div class="infoSection-button">
+                            <span class="titleTopSection-button">Credit Score:</span>
+                            <span class="subTitleBottomSection-button" id="borrowerCreditScore">Credit Amount</span>
+                        </div>
+                        
+                        <div></div>
+                        <div></div>
+
+                        <div class="infoSection-button">
+                            <span class="titleTopSection-button">Amount in Loans:</span>
+                            <span class="subTitleBottomSection-button" id="totalInLoans">$ amount</span>
+                        </div>
+                    </button>
+
+                    <div class="colletionDisplay-Left" id="loanList"></div>
+
+                </div>
+                <div class="colletionDisplay-Divide"></div>
+                <div class="colletionDisplay-Right">
+                    <div class="itemBackground-LeftSection">
+                        <div class="loanBorrower-status" id="statusOfItem"></div>
+                        <div class="infoSection-button-chosenLoan">
+                            <span class="subTitleBottomSection-button">Joaquin De Losada</span>
+                        </div>
+                    </div>
+
+                    <div class="itemBackground-LeftSection">
+                        <div class="infoSection-button-chosenLoan">
+                            <span class="titleTopSection-button">Loan Amount</span>
+                            <span class="subTitleBottomSection-button">1234212</span>
+                            
+                            <span class="titleTopSection-button">Credit Score</span>
+                            <span class="subTitleBottomSection-button">843</span>
+                        </div>
+
+                        <div class="infoSection-button-chosenLoan">
+                            <span class="titleTopSection-button">Monthly Payment</span>
+                            <span class="subTitleBottomSection-button">6453</span>
+                            
+                            <span class="titleTopSection-button">Missed payments</span>
+                            <span class="subTitleBottomSection-button">0</span>
+                        </div>
+                    </div>
+
+                    <div class="itemBackground-LeftSection ToPage">
+                        <div class="buttonToNewPage row-1">
+                            <button class="sub-btn new" id="newLoan" onclick="window.location.href='NewLoanDisplay.html'">New Loan</button>
+                        </div>
+
+                        <div class="buttonToNewPage row-2">
+                            <button class="sub-btn edit" id="editBorrower" onclick="window.location.href='EditBorrowerDisplay.html'">Edit Borrower</button>
+                            <button class="sub-btn delete" id="deleteBorrower">Delete Borrower</button>
+                        </div>
+
+                        <div class="buttonToNewPage row-1">
+                            <button class="sub-btn" onclick="window.location.href='index.html'">Return</button>
+                        </div>
+
+                        <div class="status-msg" id="statusMsg"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>

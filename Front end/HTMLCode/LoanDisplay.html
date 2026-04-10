@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loan page</title>
+
+        <meta name="Author" content="Joaquin De Losada">
+
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <div class="pageDisplay">
+                <div class="colletionDisplay-Left">
+
+                    <div class="LoanDisplayTemplate">
+                        <button class="itemBackground-LeftSection Button" type="button" id="MainLoanInfoButton">
+                            <div class="loanBorrower-status" id="statusOfItem"></div>
+                            
+                            <div></div>
+                            <div></div>
+                            
+                            <div class="infoSection-button">
+                                <span class="titleTopSection-button loan-name" id="loanName">House 1</span>
+                                <span class="subTitleBottomSection-button borrower-name" id="BorrowerName">Joaquin De Losada</span>
+                            </div>
+                            
+                            <div></div>
+                            <div></div>
+
+                            <div class="infoSection-button">
+                                <span class="titleTopSection-button">Loan Amount:</span>
+                                <span class="subTitleBottomSection-button loan-amount" id="loanSize">420000</span>
+                            </div>
+                            
+                            <div></div>
+                            <div></div>
+
+                            <div class="infoSection-button">
+                                <span class="titleTopSection-button">Payment date:</span>
+                                <span class="subTitleBottomSection-button payment-date" id="paymentDate">4</span>
+                            </div>
+                            
+                            <div></div>
+                            <div></div>
+
+                            <div class="infoSection-button">
+                                <span class="titleTopSection-button">Payment amount:</span>
+                                <span class="subTitleBottomSection-button payment-amount" id="paymentAmount">2345</span>
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="colletionDisplay-Divide"></div>
+
+                <div class="colletionDisplay-Right">
+                    <div class="itemBackground-LeftSection">
+                        <div class="loanBorrower-status" id="statusOfItem"></div>
+                        <div class="infoSection-button-chosenLoan">
+                            <span class="titleTopSection-button">Loan Name</span>
+                            <span class="subTitleBottomSection-button">Borrower Name</span>
+                        </div>
+                    </div>
+
+                    <div class="itemBackground-LeftSection">
+                        <div class="infoSection-button-chosenLoan">
+                            <span class="titleTopSection-button">Loan Remaining</span>
+                            <span class="subTitleBottomSection-button">$ Remaining</span>
+                            
+                            <span class="titleTopSection-button">Interest Rate</span>
+                            <span class="subTitleBottomSection-button">Interest Value</span>
+                        </div>
+
+                        <div class="infoSection-button-chosenLoan">
+                            <span class="titleTopSection-button">Monthly Payment</span>
+                            <span class="subTitleBottomSection-button">Payment amount</span>
+                            
+                            <span class="titleTopSection-button">Payment due</span>
+                            <span class="subTitleBottomSection-button">xx of the month</span>
+                        </div>
+                        
+                        <div class="infoSection-button-chosenLoan">
+                            <span class="titleTopSection-button">Monthly Payment</span>
+                            <span class="subTitleBottomSection-button">Payment amount</span>
+                        </div>
+                    </div>
+
+                    <div class="itemBackground-LeftSection ToPage">
+                        <div class="buttonToNewPage row-2">
+                            <button class="sub-btn edit" onclick="window.location.href='EditLoanDisplay.html'">Edit Loan</button>
+                            <button class="sub-btn delete" id="deleteLoan">Delete Loan</button>
+                        </div>
+
+                        <div class="buttonToNewPage row-1">
+                            <button class="sub-btn" onclick="window.location.href='index.html'">Return</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
