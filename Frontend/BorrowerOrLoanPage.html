@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loan and Borrower page</title>
+
+        <meta name="Author" content="Joaquin De Losada">
+
+        <link rel="stylesheet" href="CSSFolder/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/cyborg/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="BorrowerOrLoanPage.html">Loan/Borrower
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">IT Helpdesk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="displayAllAdminOptions">
+            <!-- Left Column: Borrower Cards -->
+            <div class="duelBoxDisplay">
+                <a href="BorrowerDisplay.html" style="text-decoration: none; cursor: pointer;">
+                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                        <div class="card-header">Borrower</div>
+                        <div class="card-body">
+                            <h4 class="card-title">Display borrowers</h4>
+                            <p class="card-text">Display all borrowers in the system.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="NewBorrowerDisplay.html" style="text-decoration: none; cursor: pointer;">
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+                        <div class="card-header">Borrower</div>
+                        <div class="card-body">
+                            <h4 class="card-title">New borrower</h4>
+                            <p class="card-text">Create a new borrower in the system.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Right Column: Loan Cards -->
+            <div class="duelBoxDisplay">
+                <a href="LoanDisplay.html" style="text-decoration: none; cursor: pointer;">
+                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                        <div class="card-header">Loan</div>
+                        <div class="card-body">
+                            <h4 class="card-title">Display loans</h4>
+                            <p class="card-text">Display all current loans in the system.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="NewLoanDisplay.html" style="text-decoration: none; cursor: pointer;">
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+                        <div class="card-header">Loan</div>
+                        <div class="card-body">
+                            <h4 class="card-title">New loan</h4>
+                            <p class="card-text">Create a new loan in the system.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
